@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Seo from "./Seo";
 
 export default function FeaturesPage() {
   return (
@@ -502,7 +503,7 @@ export default function FeaturesPage() {
                   <Link href="https://www.swiggy.com/support">Learn More</Link>
                 </Button>
               </div>
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <img
                   src="https://miro.medium.com/v2/resize:fit:1152/1*G3tBmNHKdAI7lbRY_rYZLA.jpeg"
                   alt="Swiggy Money App Showcase"
@@ -510,7 +511,7 @@ export default function FeaturesPage() {
                   height={300}
                   className="rounded-lg shadow-lg"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -656,6 +657,7 @@ export default function FeaturesPage() {
           </div>
         </div>
       </footer>
+      <Seo />
     </div>
   );
 }
