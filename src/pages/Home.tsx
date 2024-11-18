@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Gift, Shield, CreditCard } from 'lucide-react';
+import { ArrowRight, CreditCard, Gift, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
+import FAQ from "./FAQ";
 
 const Home = () => {
   return (
@@ -43,22 +43,19 @@ const Home = () => {
                 <Shield className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">100% Secure</h3>
-              <p className="text-gray-600">
-                Safe and secure payment methods
-              </p>
+              <p className="text-gray-600">Safe and secure payment methods</p>
             </div>
             <div className="text-center">
               <div className="bg-orange-100 p-4 rounded-full inline-block mb-4">
                 <CreditCard className="h-8 w-8 text-orange-600" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Instant Delivery</h3>
-              <p className="text-gray-600">
-                Get your voucher code instantly
-              </p>
+              <p className="text-gray-600">Get your voucher code instantly</p>
             </div>
           </div>
         </div>
       </section>
+      <FAQ />
 
       {/* How It Works Section */}
       <section className="py-20">
@@ -67,24 +64,24 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               {
-                step: '1',
-                title: 'Choose Voucher',
-                description: 'Select from our range of Swiggy vouchers',
+                step: "1",
+                title: "Choose Voucher",
+                description: "Select from our range of Swiggy vouchers",
               },
               {
-                step: '2',
-                title: 'Add to Cart',
-                description: 'Select the denomination and quantity',
+                step: "2",
+                title: "Add to Cart",
+                description: "Select the denomination and quantity",
               },
               {
-                step: '3',
-                title: 'Make Payment',
-                description: 'Pay using your preferred payment method',
+                step: "3",
+                title: "Make Payment",
+                description: "Pay using your preferred payment method",
               },
               {
-                step: '4',
-                title: 'Get Code',
-                description: 'Receive your voucher code instantly',
+                step: "4",
+                title: "Get Code",
+                description: "Receive your voucher code instantly",
               },
             ].map((item, index) => (
               <div key={index} className="text-center">
